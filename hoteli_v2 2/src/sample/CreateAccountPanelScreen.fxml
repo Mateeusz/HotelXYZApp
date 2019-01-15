@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="createAccountPaneId" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginScreenController">
+    <children>
+      <HBox layoutX="63.0" layoutY="48.0" prefHeight="231.0" prefWidth="300.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <VBox prefHeight="231.0" prefWidth="180.0">
+               <children>
+                  <TextField fx:id="newLoginLabel" prefHeight="20.0" prefWidth="100.0" promptText="Login">
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="newPasswordLabel" prefHeight="20.0" prefWidth="100.0" promptText="Hasło">
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <TextField fx:id="nameLabel" prefHeight="20.0" prefWidth="100.0" promptText="Imię">
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="surrnameLabel" layoutX="10.0" layoutY="64.0" prefHeight="20.0" prefWidth="100.0" promptText="Nazwisko">
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="emailLabel" layoutX="10.0" layoutY="64.0" prefHeight="20.0" prefWidth="100.0" promptText="E-mail">
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="phoneLabel" layoutX="10.0" layoutY="91.0" prefHeight="20.0" prefWidth="100.0" promptText="Nr telefonu">
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="peselLabel" layoutX="10.0" layoutY="118.0" prefHeight="20.0" prefWidth="100.0" promptText="PESEL">
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="231.0" prefWidth="180.0">
+               <children>
+                  <TextField fx:id="streetLabel" prefHeight="20.0" prefWidth="100.0" promptText="Ulica">
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="streetNumberLabel" prefHeight="20.0" prefWidth="100.0" promptText="Numer domu">
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="apartmentNumberLabel" layoutX="10.0" layoutY="64.0" prefHeight="20.0" prefWidth="100.0" promptText="Numer mieszkania">
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="zipLabel" layoutX="10.0" layoutY="64.0" prefHeight="20.0" prefWidth="100.0" promptText="Kod pocztowy">
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="cityLabel" layoutX="10.0" layoutY="91.0" prefHeight="20.0" prefWidth="100.0" promptText="Miejscowość">
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <HBox prefHeight="40.0" prefWidth="100.0">
+                     <children>
+                        <TextField fx:id="dayLabel" promptText="Dzień">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets top="3.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="monthLabel" layoutX="10.0" layoutY="10.0" promptText="Miesiąc">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets top="3.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="yearLabel" layoutX="10.0" layoutY="10.0" promptText="Rok ">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets top="3.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#createAnAccount" prefHeight="27.0" prefWidth="175.0" style="-fx-background-color: green; -fx-background-radius: 120;" text="Stwórz konto" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Aleo-Regular" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>

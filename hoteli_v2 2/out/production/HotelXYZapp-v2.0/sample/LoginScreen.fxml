@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainAppId" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginScreenController">
+    <children>
+        <BorderPane fx:id="loginBorderPaneId" layoutX="5.0" layoutY="5.0" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <top>
+            <AnchorPane prefHeight="73.0" prefWidth="696.0" BorderPane.alignment="CENTER">
+               <children>
+                      <VBox prefHeight="118.0" prefWidth="686.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                          <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HotelXYZ" textAlignment="CENTER" wrappingWidth="684.7109375">
+                                  <font>
+                                      <Font name="Aleo-Regular" size="40.0" />
+                                  </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                              </Text>
+                        <Text fx:id="newAccComId" fill="#ff4848" strokeType="OUTSIDE" strokeWidth="0.0" text="Utworzono nowe konto!" textAlignment="CENTER" visible="false" wrappingWidth="685.2060546875">
+                           <font>
+                              <Font name="American Typewriter" size="13.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane>
+                           <children>
+                              <Button fx:id="gotAccountBut" layoutX="425.0" layoutY="12.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 90; -fx-border-image-width: 3px;" styleClass="buttonBut1" text="Mam konto" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="Aleo-Regular" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button id="butonBut1" fx:id="haveNotAccouId" layoutX="425.0" layoutY="3.0" mnemonicParsing="false" onAction="#logIntoPage" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-image-width: 3; -fx-border-radius: 90;" text="Nie mam konta" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="425.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="Aleo-Regular" size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                          </children>
+                      </VBox>
+               </children>
+            </AnchorPane>
+            </top>
+            <center>
+                <fx:include source="LoginScreenPane.fxml" />
+            </center>
+         <right>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </right>
+         <left>
+            <VBox prefHeight="282.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+         </left>
+         <bottom>
+            <AnchorPane prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="3.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HotelXYZ, Wrocław ul. abcd 15" textAlignment="CENTER" wrappingWidth="689.9999797344208" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0000202655792236" AnchorPane.topAnchor="13.0" />
+               </children>
+            </AnchorPane>
+         </bottom>
+        </BorderPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="allRezPaneId" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="585.0" stylesheets="@tableStyle.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TableController">
+   <children>
+      <TableView fx:id="table" prefHeight="390.0" prefWidth="551.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <columns>
+            <TableColumn fx:id="idTab" prefWidth="30.0" text="ID" />
+          <TableColumn fx:id="poczatekTab" prefWidth="100.0" text="Początek " />
+          <TableColumn fx:id="koniecTab" prefWidth="100.0" text="Koniec " />
+            <TableColumn fx:id="numerTab" prefWidth="69.0" text="Nr pokoju" />
+            <TableColumn fx:id="typTab" text="Typ pokoju" />
+            <TableColumn fx:id="imieTab" prefWidth="100.0" text="Imię " />
+            <TableColumn fx:id="nazwiskoTab" prefWidth="100.0" text="Nazwisko" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

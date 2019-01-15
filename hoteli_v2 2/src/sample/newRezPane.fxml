@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPaneId1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginScreenController">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="220.0">
+         <children>
+            <VBox prefWidth="221.0" spacing="5.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="sprawdzPeselId" prefHeight="27.0" prefWidth="211.0" promptText="PESEL" />
+                     </children>
+                  </HBox>
+                  <TextField fx:id="loginRezId" prefHeight="20.0" prefWidth="100.0" promptText="Login" />
+                  <TextField fx:id="hasloRezId" prefHeight="20.0" prefWidth="100.0" promptText="Hasło" />
+                  <TextField fx:id="imieRezId" prefHeight="20.0" prefWidth="100.0" promptText="Imię" />
+                  <TextField fx:id="nazwiskoRezId" prefHeight="20.0" prefWidth="100.0" promptText="Nazwisko" />
+                  <TextField fx:id="emailRezId" prefHeight="20.0" prefWidth="100.0" promptText="E-mail" />
+                  <TextField fx:id="teleRezId" prefHeight="20.0" prefWidth="100.0" promptText="Nr telefonu" />
+                  <TextField fx:id="ulicaRezId" prefHeight="20.0" prefWidth="100.0" promptText="Ulica" />
+                  <TextField fx:id="domRezId" prefHeight="20.0" prefWidth="100.0" promptText="Numer domu" />
+                  <TextField fx:id="mieszkanieRezId" prefHeight="20.0" prefWidth="100.0" promptText="Numer mieszkania" />
+                  <TextField fx:id="kodRezId" prefHeight="20.0" prefWidth="100.0" promptText="Kod pocztowy" />
+                  <TextField fx:id="miejscowoscRezId" prefHeight="20.0" prefWidth="100.0" promptText="Mejscowość" />
+                  <HBox>
+                     <children>
+                        <TextField fx:id="dzienRezId" promptText="Dzień" />
+                        <TextField fx:id="miesiacRezId" promptText="Miesiąc" />
+                        <TextField fx:id="rokRezId" promptText="Rok" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="220.0" layoutY="40.0" prefHeight="386.0" prefWidth="380.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Label text="Wybierz typ pokoju">
+               <font>
+                  <Font name="Aleo-Regular" size="25.0" />
+               </font>
+            </Label>
+            <ComboBox prefWidth="150.0">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></ComboBox>
+            <Label text="Wybierz datę rozpoczęcia rezerwacji:">
+               <font>
+                  <Font name="Aleo-Regular" size="16.0" />
+               </font></Label>
+            <HBox prefWidth="200.0" spacing="5.0">
+               <children>
+                  <ComboBox prefWidth="150.0" promptText="Dzień" />
+                  <ComboBox prefWidth="150.0" promptText="Miesiąc" />
+                  <ComboBox prefWidth="150.0" promptText="Rok" />
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <Label text="Wybierz datę zakończenia rezerwacji:">
+               <font>
+                  <Font name="Aleo-Regular" size="16.0" />
+               </font></Label>
+            <HBox prefWidth="200.0" spacing="5.0">
+               <children>
+                  <ComboBox prefWidth="150.0" promptText="Dzień" />
+                  <ComboBox prefWidth="150.0" promptText="Miesiąc" />
+                  <ComboBox prefWidth="150.0" promptText="Rok" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#zarezerwujBtnAction" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: green; -fx-border-color: white; -fx-border-radius: 90; -fx-background-radius: 89;" text="Zarezerwuj" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Aleo-Regular" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="260.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Button layoutX="220.0" mnemonicParsing="false" onAction="#sprawdzAction" prefHeight="29.0" prefWidth="270.0" style="-fx-background-color: orange; -fx-border-color: white; -fx-border-radius: 90; -fx-background-radius: 89;" text="Sprawdź czy klient jest w systemie" textAlignment="CENTER" textFill="WHITE" AnchorPane.topAnchor="5.0" />
+   </children>
+</AnchorPane>
